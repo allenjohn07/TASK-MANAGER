@@ -1,0 +1,41 @@
+/* Default styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the heading vertically */
+    height: 100vh;
+    margin: 0 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .home-heading {
+    text-align: center;
+    margin-bottom: 50px; /* Adjust margin as needed */
+  }
+  
+  .home-content {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .home-content h3 {
+    text-decoration: underline;
+  }
+  
+  .home-offer-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .home-container {
+      margin: 0; /* Remove left and right margin */
+      padding: 0 20px; /* Add padding for smaller screens */
+    }
+  
+    .home-content {
+      margin-left: 0; /* Remove left margin */
+      margin-right: 20px; /* Add right margin for smaller screens */
+    }
+  }
+  

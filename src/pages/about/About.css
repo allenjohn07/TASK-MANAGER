@@ -1,0 +1,51 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height instead of height */
+  padding: 0 20px; /* Add padding to the left and right */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px; /* Adjust margin bottom as needed */
+}
+
+.about-section {
+  text-align: start;
+  margin-bottom: 40px;
+  max-width: 500px; /* Set maximum width for the section */
+}
+
+.about-section-title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-offer-list {
+  text-align: start;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    min-height: 100vh; /* Use min-height for smaller screens */
+    padding: 10px 20px 0; /* Reduce padding for smaller screens and remove bottom padding */
+    margin: 0px 50px; /* Remove margin for smaller screens */
+  }
+  .about-title {
+    font-size: 2rem;
+    /* margin: 50px;  */
+  }
+}

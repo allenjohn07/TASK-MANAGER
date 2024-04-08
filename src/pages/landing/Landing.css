@@ -1,0 +1,45 @@
+/* Default styles */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.landing-subtitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.landing-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .landing-container {
+    margin-left: 20px; /* Add margin to the left */
+    margin-right: 20px; /* Add margin to the right */
+  }
+
+  .landing-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .landing-subtitle {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .landing-text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,51 @@
+/* Custom CSS for NavBootstrap component */
+
+/* Navbar */
+.navbar {
+    padding: 10px 0; /* Adjust padding as needed */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .navbar-brand img {
+    height: 25px; /* Adjust height as needed */
+    margin-right: 10px; /* Add margin between logo and text */
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Default font size */
+  }
+  
+  /* Toggle Button */
+  .navbar-toggler {
+    border: none; /* Remove border */
+  }
+  
+  /* Sign In/Out Button */
+  .btn-outline-success,
+  .btn-outline-danger {
+    font-size: 16px; /* Default font size */
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      height: 20px; /* Decrease height for smaller screens */
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  
+    .btn-outline-success,
+    .btn-outline-danger {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  }
+  
