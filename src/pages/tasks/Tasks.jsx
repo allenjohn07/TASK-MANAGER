@@ -74,7 +74,7 @@ function Tasks() {
             ) : (
               <>
                 <span className='task'>{tsk.task}</span>
-                <div>
+                <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}} className='w-100 mt-2'>
                   <button className='edit-button' onClick={() => handleEditClick(index, tsk.task)}>Edit</button>
                   <button className='delete-button' onClick={() => deleteTask(tsk.id)}>Delete</button>
                 </div>

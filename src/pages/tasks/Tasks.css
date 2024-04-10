@@ -58,6 +58,8 @@ input[type="text"] {
     font-size: 14px;
 }
 
+
+
 .add-button {
     background-color: #5cb85c;
     color: #fff;
@@ -87,22 +89,26 @@ input[type="text"] {
 
 .each-task {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Allow task text to wrap to the next line */
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 10px;
     width: 100%;
+    position: relative; /* Add position relative */
 }
+
 
 .tasks-manager::-webkit-scrollbar {
     display: none;
 }
 
 .task {
+    width: 100%;
     margin-right: 10px;
+    flex: 1; /* Adjust task width to take remaining space */
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,12 +118,12 @@ input[type="text"] {
 
     .tasks-manager {
         width: 100%;
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .input-container {
         padding-bottom: 30px;
-        width: 70%;
+        width: 80%;
     }
 
     input[type="text"],
@@ -125,6 +131,13 @@ input[type="text"] {
     .save-button,
     .edit-button,
     .delete-button {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .add-button:hover,
+    .save-button:hover,
+    .edit-button:hover,
+    .delete-button:hover {
+      transform: scale(1.02); /* Scale the buttons by 5% when hovered */
     }
 }
